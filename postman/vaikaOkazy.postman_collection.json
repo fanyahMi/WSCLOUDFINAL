@@ -1,0 +1,658 @@
+{
+	"info": {
+		"_postman_id": "9318f26a-fd9a-4052-92e5-19eb6370895e",
+		"name": "vaikaOkazy",
+		"description": "# 📄 Get started here\n\nThis template contains a boilerplate for documentation that you can quickly customize and reuse.\n\n## 🔖 How to use this template\n\n- Replace the content given brackets (()) with your API's details.\n- Tips are formatted in `codespan` - feel free to read and remove them.\n    \n\n---\n\n`Start with a brief overview of what your API offers.`\n\nThe ((product name)) provides many API products, tools, and resources that enable you to ((add product value here)).\n\n`You can also list the APIs you offer, link to the relevant pages, or do both in this section.`\n\n## **Getting started guide**\n\n`List the steps or points required to start using your APIs. Make sure to cover everything required to reach success with your API as quickly as possible.`\n\nTo start using the ((add APIs here)), you need to -\n\n`The points given below are from The Postman API's documentation. You can reference it to write your own getting started guide.`\n\n- You must use a valid API Key to send requests to the API endpoints. You can get your API key from Postman's [integrations dashboard](https://go.postman.co/settings/me/api-keys).\n- The API has [rate and usage limits](https://postman.postman.co/workspace/Collection-Templates~6311738d-2e70-441f-ae12-78caf078c5b7/collection/22517504-e9c28f47-1253-44af-a2f3-20dce4da1f18?ctx=documentation#rate-and-usage-limits).\n- The API only responds to HTTPS-secured communications. Any requests sent via HTTP return an HTTP 301 redirect to the corresponding HTTPS resources.\n- The API returns request responses in JSON format. When an API request returns an error, it is sent in the JSON response as an error key.\n    \n\n## Authentication\n\n`Add details on the authorization keys/tokens required, steps that cover how to get them, and the relevant error codes.`\n\nThe ((product name)) API uses ((add your API's authorization type)) for authentication.\n\n`The details given below are from the Postman API's documentation. You can reference it to write your own authentication section.`\n\nPostman uses API keys for authentication. You can generate a Postman API key in the [API keys](https://postman.postman.co/settings/me/api-keys) section of your Postman account settings.\n\nYou must include an API key in each request to the Postman API with the X-Api-Key request header.\n\n### Authentication error response\n\nIf an API key is missing, malformed, or invalid, you will receive an HTTP 401 Unauthorized response code.\n\n## Rate and usage limits\n\n`Use this section to cover your APIs' terms of use. Include API limits, constraints, and relevant error codes, so consumers understand the permitted API usage and practices.`\n\n`The example given below is from The Postman API's documentation. Use it as a reference to write your APIs' terms of use.`\n\nAPI access rate limits apply at a per-API key basis in unit time. The limit is 300 requests per minute. Also, depending on your plan, you may have usage limits. If you exceed either limit, your request will return an HTTP 429 Too Many Requests status code.\n\nEach API response returns the following set of headers to help you identify your use status:\n\n| Header | Description |\n| --- | --- |\n| `X-RateLimit-Limit` | The maximum number of requests that the consumer is permitted to make per minute. |\n| `X-RateLimit-Remaining` | The number of requests remaining in the current rate limit window. |\n| `X-RateLimit-Reset` | The time at which the current rate limit window resets in UTC epoch seconds. |\n\n### 503 response\n\nAn HTTP `503` response from our servers indicates there is an unexpected spike in API access traffic. The server is usually operational within the next five minutes. If the outage persists or you receive any other form of an HTTP `5XX` error, [contact support](https://support.postman.com/hc/en-us/requests/new/).\n\n### **Need some help?**\n\n`Add links that customers can refer to whenever they need help.`\n\nIn case you have questions, go through our tutorials ((link to your video or help documentation here)). Or visit our FAQ page ((link to the relevant page)).\n\nOr you can check out our community forum, there’s a good chance our community has an answer for you. Visit our developer forum ((link to developer forum)) to review topics, ask questions, and learn from others.\n\n`You can also document or add links to libraries, code examples, and other resources needed to make a request.`",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26424429"
+	},
+	"item": [
+		{
+			"name": "Login mobile et Front Office",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/v1/login?email=randria@gmail.com&mdp=1234",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"v1",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "randria@gmail.com"
+								},
+								{
+									"key": "mdp",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscription",
+			"item": [
+				{
+					"name": "inscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/v1/inscription?email=ituprom15@gmail.com&password=prom15&password2=prom15&nom=IT&prenom=Univesity&genre=1&date_naissance=2011-01-28",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"v1",
+								"inscription"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "ituprom15@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "prom15"
+								},
+								{
+									"key": "password2",
+									"value": "prom15"
+								},
+								{
+									"key": "nom",
+									"value": "IT"
+								},
+								{
+									"key": "prenom",
+									"value": "Univesity"
+								},
+								{
+									"key": "genre",
+									"value": "1"
+								},
+								{
+									"key": "date_naissance",
+									"value": "2011-01-28"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Commun Mobile et Front Office",
+			"item": [
+				{
+					"name": "ListeCategorie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Une Categorie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/categories/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste marque par categorie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/categories/v1/marques/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste Marque",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/marques"
+					},
+					"response": []
+				},
+				{
+					"name": "Une Marque",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/marques/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste categorie par marque",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/marques/v1/categories/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste model par marque",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/marques/v1/models/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/models"
+					},
+					"response": []
+				},
+				{
+					"name": "Une model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/models/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Detail d' une model par marque et par categorie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/models/v1/details?categorie_id=2&marque_id=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"models",
+								"v1",
+								"details"
+							],
+							"query": [
+								{
+									"key": "categorie_id",
+									"value": "2"
+								},
+								{
+									"key": "marque_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Liste annee se de sortie par model",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/models/v1/details/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste Boite de vitesse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/models/v1/boitevitesses"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste carburant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/models/v1/carburants"
+					},
+					"response": []
+				},
+				{
+					"name": "Hitorique d'annonce par utilisateur",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/annonces/utilisateur"
+					},
+					"response": []
+				},
+				{
+					"name": "Detail annonce",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/annonces/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste Lieu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/lieux"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mobile",
+			"item": [
+				{
+					"name": "Modifier status annonce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"annonce_id\": 1,\r\n        \"acheteur_id\": 5,\r\n        \"prix_achat\": 74500000,\r\n        \"date_achat\": \"2024-01-27\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/annonces"
+					},
+					"response": []
+				},
+				{
+					"name": "Modifier annonce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idAnnonce\": 1,\r\n        \"lieuId\": 2,\r\n        \"vendeurId\": 2,\r\n        \"prixVente\": 124125000,\r\n        \"statut\": 1,\r\n        \"dateAnnonce\": \"2024-01-27\",\r\n        \"dateConfirmation\": null,\r\n        \"voiture\": {\r\n            \"idVoiture\": 1,\r\n            \"modelId\": 2,\r\n            \"matricule\": \"1356TBJ\",\r\n            \"utilisateurId\": 1,\r\n            \"kilometrage\": 5500,\r\n            \"modelcarburantId\": 1,\r\n            \"anneesortieId\": 1\r\n        },\r\n        \"infoAnnonce\": {\r\n            \"description\": \"Salama daholo, misy vaika maro ireto amidy. Tongava mp raha liana na antsoy 0342816644\",\r\n            \"proprietes\": [\r\n                {\r\n                \"titre\": \"Moteur\",\r\n                \"description\": \"V8 Motul\"\r\n                },\r\n                {\r\n                \"titre\": \"Volant\",\r\n                \"description\": \"A droite\"\r\n                }\r\n            ],\r\n            \"photos\": [\r\n               {\r\n                    \"data\": \"https://firebasestorage.googleapis.com/v0/b/istock-3c7b6.appspot.com/o/04e0e1be-f60f-4cfc-b199-866365f3aaa5.jpg?alt=media\",\r\n                    \"contentType\": \"image/jpeg\"\r\n                },\r\n                {\r\n                    \"data\": \"https://firebasestorage.googleapis.com/v0/b/istock-3c7b6.appspot.com/o/95b2588c-e6f8-4551-81c7-eafc0df962bc.jpg?alt=media\",\r\n                    \"contentType\": \"image/jpeg\"\r\n                }\r\n            ]\r\n        }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/annonces/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste annonce valide",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/annonces/valide"
+					},
+					"response": []
+				},
+				{
+					"name": "Ajoute Annonce",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"lieuId\": 2,\r\n        \"vendeurId\": 1,\r\n        \"prixVente\": 4125000,\r\n        \"statut\": 1,\r\n        \"dateAnnonce\": \"2024-01-27\",\r\n        \"dateConfirmation\": null,\r\n        \"voiture\": {\r\n            \"idVoiture\": 1,\r\n            \"modelId\": 2,\r\n            \"matricule\": \"1356TBJ\",\r\n            \"utilisateurId\": 1,\r\n            \"kilometrage\": 5500,\r\n            \"modelcarburantId\": 1,\r\n            \"anneesortieId\": 1\r\n        },\r\n        \"infoAnnonce\": {\r\n            \"description\": \"Sera androany Maraina\",\r\n            \"proprietes\": [\r\n                {\r\n                \"titre\": \"Moteur\",\r\n                \"description\": \"V8 Motul\"\r\n                },\r\n                {\r\n                \"titre\": \"Volant\",\r\n                \"description\": \"A droite\"\r\n                }\r\n            ],\r\n            \"photos\": [\r\n                {\r\n                    \"data\": \"https://firebasestorage.googleapis.com/v0/b/istock-3c7b6.appspot.com/o/04e0e1be-f60f-4cfc-b199-866365f3aaa5.jpg?alt=media\",\r\n                    \"contentType\": \"image/jpeg\"\r\n                },\r\n                {\r\n                    \"data\": \"https://firebasestorage.googleapis.com/v0/b/istock-3c7b6.appspot.com/o/95b2588c-e6f8-4551-81c7-eafc0df962bc.jpg?alt=media\",\r\n                    \"contentType\": \"image/jpeg\"\r\n                }\r\n            ]\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/annonces"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Front Office",
+			"item": [
+				{
+					"name": "voir tout les discussions d'un utilisateur trie par dernier messsage recu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/discussions"
+					},
+					"response": []
+				},
+				{
+					"name": "Avoir les discussion entre deux utilisateurs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/discussions/prive?participant2=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"discussions",
+								"prive"
+							],
+							"query": [
+								{
+									"key": "participant2",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Envoyer une un message vers participant2 (creer discussion)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"contenu\": \"Bonjour Manantsoa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/discussions/message/envoye?participant2=5",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"discussions",
+								"message",
+								"envoye"
+							],
+							"query": [
+								{
+									"key": "participant2",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Liste annonce",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/annonces"
+					},
+					"response": []
+				},
+				{
+					"name": "Avoir tout les annonces par filtre",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"keyWord\": \"abc123\",\r\n        \"lieu\": null,\r\n        \"min_prix\": null,\r\n        \"max_prix\": null,\r\n        \"min_km\": null,\r\n        \"max_km\": null,\r\n        \"marque\": null,\r\n        \"categorie\": null,\r\n        \"min_annee\": null,\r\n        \"max_annee\": null,\r\n        \"carburant\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/v1/annonces/filtre"
+					},
+					"response": []
+				},
+				{
+					"name": "Ajout favoris",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/annonces/favoris/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Liste annonce en favoris",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/api/v1/annonces/utilisateurs/favoris"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"key": "X-API-Key",
+			"value": "{{token}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwicm9sZSI6MSwiaWRVdGlsaXNhdGV1ciI6Miwibm9tUHJlbm9tIjoiUkFORFJJQSAgTWFsYWxhIiwidXNlciI6dHJ1ZSwiaWF0IjoxNzA2NDc4NTg4LCJleHAiOjE3MDY0ODkzODh9.ZljUxpWnxfwjtRHXtHLy03lKsL68GKZqA23wTxVPDuAJ3NiAc0bnaD9Jl4J9tfUg2kdWY73azQ2HhDqr6QEM0Q",
+			"type": "default"
+		}
+	]
+}

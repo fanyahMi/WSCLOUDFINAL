@@ -1,0 +1,96 @@
+spring.datasource.url=jdbc:postgresql://pg-33f46b02-toavinahasnii02-5d6a.a.aivencloud.com:20685/defaultdb
+spring.datasource.username=avnadmin
+spring.datasource.password=AVNS_REgdYZyuG2l4-P9Jkor
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+server.port=8080
+
+
+
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/vehicule2
+spring.datasource.username=postgres
+spring.datasource.password=Hasinjo2
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+server.port=8080
+
+Mety
+
+
+
+  public Connexion_projet() {
+        setBase("postgresql");
+        setUser("avnadmin");
+        setPassword("AVNS_REgdYZyuG2l4-P9Jkor");
+        setDatabase("defaultdb");
+        setHote("pg-33f46b02-toavinahasnii02-5d6a.a.aivencloud.com");
+        setPort("20685");
+    }
+
+    /***** vaovao ****/
+
+
+spring.datasource.url=jdbc:postgresql://pg-3c68f313-projethasinjo-a38f.a.aivencloud.com:28071/defaultdb
+spring.datasource.username=avnadmin
+spring.datasource.password=AVNS_PhrlTOrIXIqdy1wlFM5
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+server.port=8080
+
+
+
+
+    public Connexion_projet() {
+        setBase("postgresql");
+        setUser("avnadmin");
+        setPassword("AVNS_PhrlTOrIXIqdy1wlFM5");
+        setDatabase("defaultdb");
+        setHote("pg-3c68f313-projethasinjo-a38f.a.aivencloud.com");
+        setPort("28071");
+    }
+
+
+mongosh "mongodb+srv://cluster0.cncbpte.mongodb.net/" --apiVersion 1 --username projetHasinjo
+spring.data.mongodb.uri=mongodb+srv://projetHasinjo:Finoana24@cluster0.cncbpte.mongodb.net/vehicule
+---------------------- mongo 
+mongosh "mongodb+srv://atlascluster.b3xhoy6.mongodb.net/" --apiVersion 1 --username Hasinjo
+
+spring.data.mongodb.uri=mongodb+srv://Hasinjo:Hasinjo2@atlascluster.b3xhoy6.mongodb.net/vehicule
+
+
+
+        public Connexion_projet() {
+        setBase("postgresql");
+        setUser("postgres");
+        setPassword("Hasinjo2");
+        setDatabase("vehicule2");
+        setHote("localhost");
+        setPort("5432");
+    }
+
+
+drop view v_categorie_marque;
+drop view v_detail_annonce;
+drop view v_effectifstat;
+drop view v_marque_model;
+drop view v_model_annee;
+drop view v_model_details;
+drop view v_statannoncemois;
+drop view v_statventemois;
+drop view v_utilisateur;
+drop view v_vente;\dv
+drop table boitevitesse;
+drop table comission;
+drop table token;
+drop table vente;
+drop table annonce;
+drop table lieu;
+drop table voiture;
+ drop table anneesortie;
+ drop table modelcarburant;
+ drop table carburant;
+ drop table model;
+ drop table marque;
+ drop table categorie;
+ drop table utilisateur;
